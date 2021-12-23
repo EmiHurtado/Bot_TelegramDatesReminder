@@ -15,7 +15,7 @@ import logging
 import datetime  
 import dateparser  
 import pymongo 
-import config    
+from settings import config    
 
 ## bot  
 bot = telebot.TeleBot(config.telegram_key)  
