@@ -12,9 +12,8 @@ ENV = "PROD"#<--- change here DEV or PROD#
 # keys  
 
 if ENV == "DEV":  
-    from settings import keys   
-    telegram_key = keys.telegram_key   
-    mongodb_key = keys.mongodb_key
+    telegram_key = "5047789487:AAFrTGoR4auz3rP1tLg34QSmW3_OUiQDGpk"  
+    mongodb_key = "mongodb+srv://emhurtadom:Batman1@telegramdatesreminderbo.wlafu.mongodb.net/TelegramDatesReminderBot?retryWrites=true&w=majority"
     
 elif ENV == "PROD":   
     import ast   
