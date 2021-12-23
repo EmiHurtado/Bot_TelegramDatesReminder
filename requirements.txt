@@ -19,7 +19,6 @@ pycosat==0.6.3
 pymongo==4.0.1
 pyTelegramBotAPI==4.2.2
 pytz-deprecation-shim==0.1.0.post0
-pywin32==228
 PyYAML==5.4.1
 QDarkStyle==2.8.1
 sip==4.19.13
