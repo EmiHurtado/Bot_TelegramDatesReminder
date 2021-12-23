@@ -21,7 +21,7 @@ pyTelegramBotAPI==4.2.2
 pytz-deprecation-shim==0.1.0.post0
 PyYAML==5.4.1
 QDarkStyle==2.8.1
-sip==4.19.13
+sip==6.5.0
 terminado==0.9.4
 tzdata==2021.5
 tzlocal==4.1
