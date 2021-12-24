@@ -7,7 +7,7 @@ Created on Thu Dec 23 12:57:39 2021
 
 import os
 
-ENV = "PROD"#<--- change here DEV or PROD#
+ENV = "DEV"#<--- change here DEV or PROD#
 
 # keys  
 
