@@ -51,9 +51,7 @@ def _start(message):
 @bot.message_handler(commands=['help'])
 def _help(message):
     msg = "Set an event, like someone's birthday, for example: \n\
-            Nadia: Oct 25 \nAnd I'm gonna save the date and every Oct 25 I will remind you of Nadia's birthday. \n\
-Save a date with \n/save \n\
-You can always check for today's event with \n/check"
+            Nadia: Oct 25 \nAnd I'm gonna save the date and every Oct 25 I will remind you of Nadia's birthday. \n\ Save a date with \n/save \n\ You can always check for today's event with \n/check"
     bot.send_message(message.chat.id, msg)
 
 
@@ -143,8 +141,7 @@ def _view(message):
 @bot.message_handler(commands=['delete'])
 def _delete(message):
     ## ask name
-    msg = "Tell me the event to Delete, for example: \n\
-            xmas day \nAnd I'm gonna stop the reminder."
+    msg = "Tell me the event to Delete, for example: \n\ xmas day \nAnd I'm gonna stop the reminder."
     message = bot.reply_to(message, msg)
     bot.register_next_step_handler(message, delete_event)
 
@@ -216,8 +213,7 @@ elif config.ENV == "PROD":
     def webhook():
         bot.remove_webhook()
         bot.set_webhook(url=config.webhook+config.telegram_key)
-        return 'Chat with the Bot  <a href ="https://t.me/DatesReminder1Bot">here</a> \
-          or   Check the project code <a href ="https://github.com/EmiHurtado/Bot_TelegramDatesReminder">here</a>', 200
+        return 'Chat with the Bot  <a href ="https://t.me/DatesReminder1Bot">here</a> \or   Check the project code <a href ="https://github.com/EmiHurtado/Bot_TelegramDatesReminder">here</a>', 200
 
     if __name__ == "__main__":
         print("---", datetime.datetime.now().strftime("%H:%M"), "---")
