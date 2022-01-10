@@ -7,8 +7,8 @@ Created on Thu Dec 23 12:57:39 2021
 
 import os
 
-ENV = "DEV"
-#ENV = "PROD"
+#ENV = "DEV"
+ENV = "PROD"
 
 
 
