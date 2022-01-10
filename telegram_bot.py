@@ -195,7 +195,8 @@ def scheduler():
 
 # run
 if config.ENV == "DEV":
-    bot.infinity_polling(True)  #bot.polling()
+    #bot.infinity_polling(True)  
+    bot.polling()
 
 
 elif config.ENV == "PROD":
